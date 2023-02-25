@@ -24,7 +24,6 @@ class DB:
                 registros = cursor.fetchall()
                 for registro in registros:
                     print(registro)
-
         except Exception as e:
             print(f"Ha ocurrido un error : {e}")
         finally:

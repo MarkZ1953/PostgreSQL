@@ -18,7 +18,7 @@ class DB:
                 sentencia = "SELECT * FROM persona WHERE id_persona = %s" # %s Es u placeholder, el cual puede ser sustituido despues
                 # id_persona = input("Ingrese el valor de Id_persona : ") 
                 # No es necesario convertir el valor obtenido atravez de consola en un entero, este parametro admite string
-                id_persona = 2
+                id_persona = 5
                 cursor.execute(sentencia,(id_persona,))
                 registros = cursor.fetchone()
                 print(registros)

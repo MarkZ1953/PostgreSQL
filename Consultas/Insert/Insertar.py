@@ -14,7 +14,12 @@ class DB:
     def fetch_all(self):
         try:
             with self.my_connection.cursor() as cursor:
-                sentencia = "INSERT INTO persona ()"
+                sentencia = "INSERT INTO persona (nombre,apellido,email) VALUES(%s,%s,%s)"
+                valores = ("Laura","Castro","lauracastro@gmail.com")
+                cursor.execute(sentencia,valores)
+                self.my_connection.commit()
+                registros_insertados = cursor.rowcount
+                print(f"Registros Insertados : {registros_insertados}")
         except Exception as e:
             print(f"Ha ocurrido un error : {e}")
         finally:

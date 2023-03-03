@@ -1,0 +1,5 @@
+10:14:02 AM: DEBUG [Persona.py:26] 
+            Id Persona : 1,Nombre: Felipe,
+            Apellido: Castro, Email: castrolopez.davidfelipe@gmail.com
+        
+10:36:26 AM: DEBUG [Conexion.py:23] Conexion Existosa : <connection object at 0x000001A8649E1AD0; dsn: 'user=postgres password=xxx dbname=teste_db host=127.0.0.1 port=5432', closed: 0>

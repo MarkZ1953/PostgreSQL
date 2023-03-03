@@ -20,8 +20,4 @@ class Persona:
     @email.setter
     def email(self,apellido):
         self._apellido = apellido
-    
-if __name__ == "__main__":
-    persona1 = Persona(1,"Felipe","Castro","castrolopez.davidfelipe@gmail.com")
-    log.debug(persona1)
-    persona1 = Persona
+        

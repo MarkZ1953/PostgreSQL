@@ -3,6 +3,7 @@ import psycopg2 as bd
 import sys
 
 class Conexion:
+    
     _DATABASE = 'teste_db'
     _USERNAME = 'postgres'
     _PASSWORD = 'admin'
